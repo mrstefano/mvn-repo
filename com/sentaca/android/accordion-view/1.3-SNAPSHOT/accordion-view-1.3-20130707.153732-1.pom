@@ -21,7 +21,7 @@
 	    <repository>
 	        <id>github</id>
 	        <name>GitHub ${project.artifactId} Repository</name>
-	        <url>https://raw.github.com/${github.mvn.repo.owner}/${project.artifactId}/${github.mvn.repo.name}</url>
+	        <url>https://raw.github.com/${github.mvn.repo.owner}/${github.mvn.repo.name}</url>
 	    </repository>
 	</distributionManagement>
 
@@ -113,8 +113,8 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
-					<repositoryName>${github.mvn.repo.name}</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>${github.mvn.repo.owner}</repositoryOwner>    <!-- github username -->
+					<repositoryName>${github.mvn.repo.name}</repositoryName>      <!-- github repo name -->
 				</configuration>
 				<executions>
 					<!-- run site-maven-plugin's 'site' target as part of the build's normal 
